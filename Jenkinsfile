@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'b7022718-432e-45cb-8269-ad9dd65959ff', branch: 'main', url: 'https://github.com/mikaela0ng/node-webapp.git'
+                git credentialsId: 'github', branch: 'main', url: 'https://github.com/mikaela0ng/node-webapp.git'
             }
         }
         stage('Build Docker Image') {
